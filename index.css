@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: yellow;
+}
+.main{
+    justify-content: center;
+    display: flex;
+animation: an 0.5s linear infinite alternate;
+}
+@keyframes an{
+    0%{
+        transform: skewX(30deg);
+    }
+    50%{
+        transform: scaleX(-30deg);
+    }
+    100%{
+        transform: scaleX(30deg);
+    }
+}
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    margin-left: 60px;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    margin-left: 60px;
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    margin-left: 60px;
+}
+
+.main1{
+    display: flex;
+    justify-content: center;
+    transform: skewX(30deg);
+    animation: in 0.5s linear infinite alternate;
+}
+@keyframes in{
+    0%{
+        transform: skewX(50deg);
+    }
+    50%{
+        transform: scaleX(-50deg);
+    }
+    100%{
+        transform: scaleX(50deg);
+    }
+}
+.box4{
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+    margin-left: 60px;
+}
+.box5{
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+    margin-left: 60px;
+}
+.box6{
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+    margin-left: 60px;
+
+}
+.box7,.box8,.box9{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    margin-left: 50px;
+    animation: rotate 2s linear infinite alternate;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.main2{
+    display: flex;
+    justify-content: center;
+
+}
+.main3{
+    display: flex;
+    justify-content: center;
+    margin-left: 90px;
+}
+.box10{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    animation-name: p;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    transform:scale(1.5);
+
+
+}
+@keyframes p {
+    from{transform:scalex(1.5);width:30px;}
+    to{
+transform:scalex(2.0);width:50px;
+    }
+}
+
+.box11{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    animation-name: p1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    transform:perspective(scale(1.5));
+
+}
+@keyframes p1 {
+    from{transform:scaleY(1.5);height:50px; margin:30px;}
+    to{
+transform:scaleY(2.0);height:50px;margin:50px;
+    }
+}
+.box12{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    animation-name: p2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
+}
+@keyframes p2 {
+    from{transform:rotate(0deg)}
+    to{
+transform:rotate(360deg)
+    }
+}

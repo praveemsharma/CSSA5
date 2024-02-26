@@ -1,0 +1,53 @@
+body{
+    background-image: url(./sky.jpg);
+}
+.car{
+    position: relative;
+    margin-bottom: 200px;
+}
+.w2{
+    position: absolute;
+    margin-left: 832px;
+    margin-top: 360px;
+    animation: car 1s linear infinite;
+   
+}
+@keyframes car{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(100deg);}
+}
+.w1{
+    position: absolute;
+    margin-left: 590px;
+    margin-top: 360px;
+    animation: car 1s linear infinite;
+   
+}
+.car1{
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 250px;
+
+}
+.flag{
+    position: absolute;
+    margin-left: 860px;
+    margin-top: 230px;
+
+}
+.road{
+  position: absolute;
+  margin-top: 359px;
+  animation: rgmove 5s linear infinite;
+  position: fixed;
+  background-image: url(./road.jpg);
+  background-repeat: repeat-x;
+  height: 300px;
+  width: 100%;
+  
+  
+}
+.city{
+    position: absolute;
+    margin-top: 100px;
+}
